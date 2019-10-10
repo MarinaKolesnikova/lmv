@@ -1,0 +1,16 @@
+C:\Users\Marina\source\repos\lmv\lmv\bin\Debug\lmv.exe.config
+C:\Users\Marina\source\repos\lmv\lmv\bin\Debug\lmv.exe
+C:\Users\Marina\source\repos\lmv\lmv\bin\Debug\lmv.pdb
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.Form1.resources
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.Properties.Resources.resources
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.csproj.GenerateResource.cache
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.csproj.CoreCompileInputs.cache
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.exe
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.pdb
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.Form2.resources
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.Form3.resources
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.csprojAssemblyReference.cache
+C:\Users\Marina\source\repos\lmv\lmv\bin\Debug\FluentDateTime.dll
+C:\Users\Marina\source\repos\lmv\lmv\bin\Debug\FluentDateTime.xml
+C:\Users\Marina\source\repos\lmv\lmv\obj\Debug\lmv.csproj.CopyComplete
+C:\Users\Marina\source\repos\lmv\lmv\bin\Debug\FluentDateTime.pdb
