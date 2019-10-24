@@ -35,6 +35,7 @@
             this.YkrLang = new System.Windows.Forms.RadioButton();
             this.eMail = new System.Windows.Forms.Label();
             this.PWord = new System.Windows.Forms.Label();
+            this.MailCode = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // login
@@ -108,11 +109,21 @@
             this.PWord.TabIndex = 6;
             this.PWord.Text = "password";
             // 
+            // MailCode
+            // 
+            this.MailCode.AutoSize = true;
+            this.MailCode.Location = new System.Drawing.Point(92, 392);
+            this.MailCode.Name = "MailCode";
+            this.MailCode.Size = new System.Drawing.Size(39, 17);
+            this.MailCode.TabIndex = 7;
+            this.MailCode.Text = "code";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 753);
+            this.Controls.Add(this.MailCode);
             this.Controls.Add(this.PWord);
             this.Controls.Add(this.eMail);
             this.Controls.Add(this.YkrLang);
@@ -136,6 +147,7 @@
         private System.Windows.Forms.RadioButton YkrLang;
         private System.Windows.Forms.Label eMail;
         private System.Windows.Forms.Label PWord;
+        private System.Windows.Forms.Label MailCode;
     }
 }
 

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.CardNum = new System.Windows.Forms.TextBox();
-            this.CardName = new System.Windows.Forms.TextBox();
-            this.CardDate = new System.Windows.Forms.TextBox();
-            this.CardCV = new System.Windows.Forms.TextBox();
             this.cashCard = new System.Windows.Forms.RadioButton();
+            this.CardCV = new System.Windows.Forms.TextBox();
+            this.CardDate = new System.Windows.Forms.TextBox();
+            this.CardName = new System.Windows.Forms.TextBox();
+            this.CardNum = new System.Windows.Forms.TextBox();
             this.CardCode = new System.Windows.Forms.TextBox();
             this.CardConf = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -54,42 +54,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // CardNum
-            // 
-            this.CardNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CardNum.Location = new System.Drawing.Point(52, 36);
-            this.CardNum.Name = "CardNum";
-            this.CardNum.Size = new System.Drawing.Size(303, 38);
-            this.CardNum.TabIndex = 0;
-            this.CardNum.TextChanged += new System.EventHandler(this.CardNum_TextChanged);
-            // 
-            // CardName
-            // 
-            this.CardName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CardName.Location = new System.Drawing.Point(52, 87);
-            this.CardName.Name = "CardName";
-            this.CardName.Size = new System.Drawing.Size(302, 38);
-            this.CardName.TabIndex = 1;
-            this.CardName.TextChanged += new System.EventHandler(this.CardName_TextChanged);
-            // 
-            // CardDate
-            // 
-            this.CardDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CardDate.Location = new System.Drawing.Point(55, 147);
-            this.CardDate.Name = "CardDate";
-            this.CardDate.Size = new System.Drawing.Size(140, 38);
-            this.CardDate.TabIndex = 2;
-            this.CardDate.TextChanged += new System.EventHandler(this.CardDate_TextChanged);
-            // 
-            // CardCV
-            // 
-            this.CardCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CardCV.Location = new System.Drawing.Point(222, 147);
-            this.CardCV.Name = "CardCV";
-            this.CardCV.Size = new System.Drawing.Size(132, 38);
-            this.CardCV.TabIndex = 3;
-            this.CardCV.TextChanged += new System.EventHandler(this.CardCV_TextChanged);
-            // 
             // cashCard
             // 
             this.cashCard.AutoSize = true;
@@ -101,6 +65,42 @@
             this.cashCard.Text = "radioButton1";
             this.cashCard.UseVisualStyleBackColor = true;
             this.cashCard.CheckedChanged += new System.EventHandler(this.cashCard_CheckedChanged);
+            // 
+            // CardCV
+            // 
+            this.CardCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CardCV.Location = new System.Drawing.Point(201, 147);
+            this.CardCV.Name = "CardCV";
+            this.CardCV.Size = new System.Drawing.Size(153, 38);
+            this.CardCV.TabIndex = 3;
+            this.CardCV.TextChanged += new System.EventHandler(this.CardCV_TextChanged);
+            // 
+            // CardDate
+            // 
+            this.CardDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CardDate.Location = new System.Drawing.Point(55, 147);
+            this.CardDate.Name = "CardDate";
+            this.CardDate.Size = new System.Drawing.Size(140, 38);
+            this.CardDate.TabIndex = 2;
+            this.CardDate.TextChanged += new System.EventHandler(this.CardDate_TextChanged);
+            // 
+            // CardName
+            // 
+            this.CardName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CardName.Location = new System.Drawing.Point(52, 87);
+            this.CardName.Name = "CardName";
+            this.CardName.Size = new System.Drawing.Size(302, 38);
+            this.CardName.TabIndex = 1;
+            this.CardName.TextChanged += new System.EventHandler(this.CardName_TextChanged);
+            // 
+            // CardNum
+            // 
+            this.CardNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CardNum.Location = new System.Drawing.Point(52, 36);
+            this.CardNum.Name = "CardNum";
+            this.CardNum.Size = new System.Drawing.Size(303, 38);
+            this.CardNum.TabIndex = 0;
+            this.CardNum.TextChanged += new System.EventHandler(this.CardNum_TextChanged);
             // 
             // CardCode
             // 

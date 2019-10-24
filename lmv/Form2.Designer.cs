@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.confirm = new System.Windows.Forms.Button();
             this.timR = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Button();
-            this.map = new System.Windows.Forms.PictureBox();
             this.addOrd = new System.Windows.Forms.Button();
             this.FAdrss = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +41,7 @@
             this.price = new System.Windows.Forms.Label();
             this.timeBefore = new System.Windows.Forms.Label();
             this.PlugCard = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
+            this.gmap = new GMap.NET.WindowsForms.GMapControl();
             ((System.ComponentModel.ISupportInitialize)(this.FAdrss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LAdrss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -80,17 +78,6 @@
             this.close.Text = "close(img)";
             this.close.UseVisualStyleBackColor = true;
             this.close.Click += new System.EventHandler(this.close_Click);
-            // 
-            // map
-            // 
-            this.map.ErrorImage = ((System.Drawing.Image)(resources.GetObject("map.ErrorImage")));
-            this.map.Image = ((System.Drawing.Image)(resources.GetObject("map.Image")));
-            this.map.InitialImage = ((System.Drawing.Image)(resources.GetObject("map.InitialImage")));
-            this.map.Location = new System.Drawing.Point(25, 67);
-            this.map.Name = "map";
-            this.map.Size = new System.Drawing.Size(385, 400);
-            this.map.TabIndex = 3;
-            this.map.TabStop = false;
             // 
             // addOrd
             // 
@@ -142,11 +129,12 @@
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(324, 465);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(86, 102);
             this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker1.Value = new System.DateTime(2019, 10, 18, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // numericUpDown1
@@ -197,11 +185,40 @@
             this.PlugCard.UseVisualStyleBackColor = true;
             this.PlugCard.Click += new System.EventHandler(this.PlugCard_Click);
             // 
+            // gmap
+            // 
+            this.gmap.Bearing = 0F;
+            this.gmap.CanDragMap = true;
+            this.gmap.EmptyTileColor = System.Drawing.Color.Navy;
+            this.gmap.GrayScaleMode = false;
+            this.gmap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.gmap.LevelsKeepInMemmory = 5;
+            this.gmap.Location = new System.Drawing.Point(25, 68);
+            this.gmap.MarkersEnabled = true;
+            this.gmap.MaxZoom = 2;
+            this.gmap.MinZoom = 2;
+            this.gmap.MouseWheelZoomEnabled = true;
+            this.gmap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.gmap.Name = "gmap";
+            this.gmap.NegativeMode = false;
+            this.gmap.PolygonsEnabled = true;
+            this.gmap.RetryLoadTile = 0;
+            this.gmap.RoutesEnabled = true;
+            this.gmap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.gmap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.gmap.ShowTileGridLines = false;
+            this.gmap.Size = new System.Drawing.Size(381, 390);
+            this.gmap.TabIndex = 12;
+            this.gmap.Zoom = 0D;
+            this.gmap.Load += new System.EventHandler(this.gmap_Load);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 753);
+            this.Controls.Add(this.addOrd);
+            this.Controls.Add(this.gmap);
             this.Controls.Add(this.PlugCard);
             this.Controls.Add(this.timeBefore);
             this.Controls.Add(this.price);
@@ -209,14 +226,11 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.LAdrss);
             this.Controls.Add(this.FAdrss);
-            this.Controls.Add(this.addOrd);
-            this.Controls.Add(this.map);
             this.Controls.Add(this.close);
             this.Controls.Add(this.timR);
             this.Controls.Add(this.confirm);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FAdrss)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LAdrss)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -230,7 +244,6 @@
         private System.Windows.Forms.Button confirm;
         private System.Windows.Forms.Label timR;
         private System.Windows.Forms.Button close;
-        private System.Windows.Forms.PictureBox map;
         private System.Windows.Forms.Button addOrd;
         private System.Windows.Forms.DataGridView FAdrss;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -241,5 +254,6 @@
         private System.Windows.Forms.Label price;
         private System.Windows.Forms.Label timeBefore;
         private System.Windows.Forms.Button PlugCard;
+        private GMap.NET.WindowsForms.GMapControl gmap;
     }
 }

@@ -48,13 +48,16 @@ namespace lmv
 
         private void CardConf_Click(object sender, EventArgs e)
         {
-
+            Form3 closef3 = new Form3();
+            closef3.Close();
+            Form2 newForm = new Form2();
+            newForm.Show();
+           
         }
 
         private void CardCode_TextChanged(object sender, EventArgs e)
         {
-            Form1 newForm = new Form1();
-            newForm.Show();
+            
         }
     }
 }
